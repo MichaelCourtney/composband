@@ -4807,35 +4807,36 @@ extern int PlayerUID;
 
 #define DF1_LAKE_MASK (DF1_LAKE_WATER | DF1_LAKE_LAVA | DF1_LAKE_RUBBLE | DF1_LAKE_TREE | DF1_LAKE_ICE)
 
-#define DUNGEON_ANGBAND  1
-#define DUNGEON_CAMELOT  2
-#define DUNGEON_ORC      3
-#define DUNGEON_MAZE     4
-#define DUNGEON_DRAGON   5
-#define DUNGEON_GRAVE    6
-#define DUNGEON_WOOD     7
-#define DUNGEON_VOLCANO  8
-#define DUNGEON_HELL     9
-#define DUNGEON_HEAVEN   10
-#define DUNGEON_OCEAN    11
-#define DUNGEON_CASTLE   12
-#define DUNGEON_CTH      13
-#define DUNGEON_GLACIER  14
-#define DUNGEON_GOLD     15
-#define DUNGEON_NO_MAGIC 16
-#define DUNGEON_NO_MELEE 17
-#define DUNGEON_CHAMELEON 18
-#define DUNGEON_DARKNESS 19
-#define DUNGEON_GLASS    20
-#define DUNGEON_ICKY     21
-#define DUNGEON_OLYMPUS  22
-#define DUNGEON_LONELY   23
-#define DUNGEON_GIANTS_HALL 24
-#define DUNGEON_ARENA    25
-#define DUNGEON_WARREN   30
-#define DUNGEON_HIDEOUT  31
+#define DUNGEON_ANGBAND       1
+#define DUNGEON_CAMELOT       2
+#define DUNGEON_ORC           3
+#define DUNGEON_MAZE          4
+#define DUNGEON_DRAGON        5
+#define DUNGEON_GRAVE         6
+#define DUNGEON_WOOD          7
+#define DUNGEON_VOLCANO       8
+#define DUNGEON_HELL          9
+#define DUNGEON_HEAVEN       10
+#define DUNGEON_OCEAN        11
+#define DUNGEON_CASTLE       12
+#define DUNGEON_CTH          13
+#define DUNGEON_GLACIER      14
+#define DUNGEON_GOLD         15
+#define DUNGEON_NO_MAGIC     16
+#define DUNGEON_NO_MELEE     17
+#define DUNGEON_CHAMELEON    18
+#define DUNGEON_DARKNESS     19
+#define DUNGEON_GLASS        20
+#define DUNGEON_ICKY         21
+#define DUNGEON_OLYMPUS      22
+#define DUNGEON_LONELY       23
+#define DUNGEON_GIANTS_HALL  24
+#define DUNGEON_ARENA        25
+#define DUNGEON_WARREN       30
+#define DUNGEON_HIDEOUT      31
 #define DUNGEON_BATTLEFIELD  32
-#define DUNGEON_TIDAL_CAVE 33
+#define DUNGEON_TIDAL_CAVE   33
+#define DUNGEON_KAIJU        34
 
 #define DUNGEON_FEAT_PROB_NUM 3
 

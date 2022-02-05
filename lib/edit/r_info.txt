@@ -14713,8 +14713,8 @@ D:A duke of hell, in the flesh.
 
 N:832:Godzilla
 G:R:g
-I:130:100d100:50:215:20:5000
-W:84:2:999:50000:0:0
+I:130:200d100:50:270:20:5000
+W:90:2:999:50000:0:0
 B:CLAW:HURT(3d10):POISON(2d10)
 B:CLAW:HURT(3d10):POISON(2d10)
 B:BITE:HURT(20d10):CUT(5d10)
@@ -14724,7 +14724,7 @@ F:FORCE_SLEEP | FORCE_MAXHP | RES_PLAS | RES_DISE | RES_TELE
 F:ONLY_ITEM | DROP_2D2 | DROP_4D2 | DROP_GOOD | RANGED_MELEE
 F:OPEN_DOOR | BASH_DOOR | MOVE_BODY |  ANIMAL
 F:RES_FIRE | RES_COLD | NO_CONF | NO_SLEEP | RES_POIS
-F:DROP_CORPSE | POS_GAIN_AC |
+F:DROP_CORPSE | POS_GAIN_AC | KAIJU
 S:FREQ_40 | BR_DISENCHANT | BR_PLASMA | BR_NUKE
 P:Copy:Barbarian:Warrior
 P:Life:120
@@ -20826,7 +20826,7 @@ D:A king of the naga.
 
 N:1164:Mothra
 G:I:U
-I:130:65d100:50:160:20:5000
+I:130:130d100:50:250:20:5000
 W:80:2:999:50000:0:0
 B:CRUSH:HURT(20d10)
 B:GAZE:HURT(5d12):CONFUSE
@@ -20835,18 +20835,18 @@ F:FORCE_SLEEP | FORCE_MAXHP | RES_PLAS | RES_DISE | RES_TELE
 F:ONLY_ITEM | DROP_2D2 | DROP_4D2 | DROP_GOOD |
 F:OPEN_DOOR | BASH_DOOR | MOVE_BODY | ANIMAL
 F:GOOD | RES_FIRE | RES_COLD | NO_CONF | NO_SLEEP | RES_POIS
-F:DROP_CORPSE | POS_GAIN_AC
+F:DROP_CORPSE | POS_GAIN_AC | KAIJU
 S:FREQ_40 | BR_SOUND | BLINK | TELE_TO | BR_POISON | TELE_SELF |
 S:CONFUSE | SCARE |
 P:Copy:Barbarian:Warrior
 P:Life:120
-P:Body:Giant Reptile
+P:Body:Beetle
 D:The giant moth from Mothra island is here to face the threat to her
 D:home.
 
 N:1165:King Ghidora
 G:D:y
-I:130:85d100:50:185:20:5000
+I:130:170d100:50:270:20:5000
 W:85:2:999:50000:0:0
 B:CLAW:HURT(5d10)
 B:CLAW:HURT(5d10)
@@ -20857,7 +20857,7 @@ F:FORCE_SLEEP | FORCE_MAXHP | RES_PLAS | RES_DISE | RES_TELE
 F:ONLY_ITEM | DROP_2D2 | DROP_4D2 | DROP_GOOD |
 F:OPEN_DOOR | BASH_DOOR | MOVE_BODY | DRAGON
 F:EVIL | RES_FIRE | RES_COLD | NO_CONF | NO_SLEEP | RES_POIS
-F:DROP_CORPSE | POS_GAIN_AC | KILL_WALL
+F:DROP_CORPSE | POS_GAIN_AC | KILL_WALL | KAIJU
 S:FREQ_40 | BR_DISENCHANT | BR_PLASMA | BR_CHAOS | TELE_SELF | BR_ELEC
 P:Copy:Barbarian:Warrior
 P:Life:120
@@ -22721,6 +22721,154 @@ S:FREQ_35 | BLIND | CONFUSE | SCARE | BR_ACID | S_DRAGON | S_HI_DRAGON | DETECT_
 D:A wingless black wyrm, acid dripping from both its fangs and hatefully whispered words.
 D:It has sired many spawns in the forgotten lands of Rhun and many in the Trollshaws have fallen prey to it.
 
+# More friends for Godzilla
+
+N:1263:Anguirus
+G:R:s
+I:120:110d100:20:250:40:5000
+W:71:1:999:27000:0:0
+B:BITE:HURT(5d15)
+B:CRUSH:HURT(6d12)
+B:CRUSH:HURT(6d12)
+B:CRUSH:HURT(6d12)
+A:SHARDS(3d3)
+F:UNIQUE | CAN_SWIM | NO_SLEEP
+F:FORCE_MAXHP |
+F:ONLY_ITEM | DROP_2D2 | DROP_GOOD |
+F:KILL_WALL | MOVE_BODY | RANGED_MELEE
+F:KAIJU | IM_POIS | RES_SHAR | RES_SOUN | RES_TELE
+F:DROP_CORPSE | POS_GAIN_AC
+P:Copy:Barbarian:Warrior
+P:Life:120
+P:Body:Giant Reptile
+S:HEAL | BERSERK
+D:A gargantuan beast covered in spikes, he was Godzilla's oldest rival, 
+D:but has since become best friends.
+
+N:1264:Rodan
+G:R:r
+I:130:120d100:20:200:40:5000
+W:74:1:999:30000:0:0
+B:BUTT:HURT(6d15)
+B:CRUSH:HURT(8d10)
+B:CRUSH:HURT(8d10)
+F:UNIQUE | NO_SLEEP
+F:FORCE_MAXHP | CAN_FLY
+F:ONLY_ITEM | DROP_2D2 | DROP_GOOD |
+F:KILL_WALL | MOVE_BODY | RANGED_MELEE
+F:KAIJU | IM_POIS | RES_SOUN | RES_TELE
+F:DROP_CORPSE | POS_GAIN_AC
+P:Copy:Barbarian:Warrior
+P:Life:120
+P:Body:Giant Reptile
+S:BR_SOUND | BIRD_DROP
+D:A huge birdlike creature flying at incredible speeds, capable of making a 
+D:devastating sonic boom 
+
+N:1265:Ebirah the Terror from the Deep
+G:I:R
+I:120:115d100:20:240:40:5000
+W:72:1:999:28000:0:0
+B:CLAW:HURT(8d12)
+B:CLAW:HURT(8d12)
+B:CRUSH:HURT(6d12)
+B:CRUSH:HURT(6d12)
+F:UNIQUE | CAN_SWIM
+F:FORCE_MAXHP |
+F:ONLY_ITEM | DROP_2D2 | DROP_GOOD |
+F:KILL_WALL | MOVE_BODY | RANGED_MELEE | NO_SLEEP
+F:KAIJU | IM_POIS | RES_SHAR | RES_SOUN | RES_TELE
+F:DROP_CORPSE | POS_GAIN_AC
+P:Copy:Barbarian:Warrior
+P:Life:120
+P:Body:Beetle
+D:A colossal lobster who lurks beneath the waves crushing passing ships 
+D:in its immense claws
+
+N:1266:Manda the Water Dragon
+G:J:G
+I:125:120d100:20:200:40:5000
+W:73:1:999:29000:0:0
+B:CRUSH:HURT(20d10):HURT(20d10, 20%)
+B:CRUSH:HURT(20d10):HURT(20d10, 20%)
+B:BITE:HURT(5d50):POISON(8d11)
+F:UNIQUE | FORCE_MAXHP | CAN_SWIM | WILD_OCEAN |
+F:MOVE_BODY | KILL_WALL | RES_FIRE | RES_ACID | RES_COLD |
+F:RES_WATE | REGENERATE | RANGED_MELEE |
+F:NO_CONF | NO_SLEEP | RIDING | KAIJU
+F:DROP_CORPSE | POS_GAIN_AC
+P:Copy:Half-Giant:Mauler
+P:Life:120
+P:Body:Giant Reptile
+D:A vast serpent who served as guardian to the ancient sunken kingdom of Mu 
+D:before it lived on monster island
+
+N:1268:Baragon
+G:R:r
+I:120:110d100:20:200:40:5000
+W:70:1:999:27000:0:0
+B:BITE:HURT(5d15)
+B:CRUSH:HURT(6d10)
+B:CRUSH:HURT(6d10)
+B:CRUSH:HURT(6d10)
+F:UNIQUE | NO_SLEEP
+F:FORCE_MAXHP |
+F:ONLY_ITEM | DROP_2D2 | DROP_GOOD |
+F:KILL_WALL | MOVE_BODY | RANGED_MELEE
+F:KAIJU | IM_POIS | RES_TELE
+F:DROP_CORPSE | POS_GAIN_AC
+P:Copy:Barbarian:Warrior
+P:Life:120
+P:Body:Giant Reptile
+D:A giant red four legged beast with a large horn and floppy ears. It can 
+D:burrow underground.
+
+N:1269:Varan the Flying Monster
+G:R:U
+I:130:120d100:20:220:40:5000
+W:74:1:999:30000:0:0
+B:BITE:HURT(6d15)
+B:CLAW:HURT(6d12)
+B:CLAW:HURT(6d12)
+B:CRUSH:HURT(8d10)
+F:UNIQUE | NO_SLEEP
+F:FORCE_MAXHP | CAN_FLY
+F:ONLY_ITEM | DROP_2D2 | DROP_GOOD |
+F:KILL_WALL | MOVE_BODY | RANGED_MELEE
+F:KAIJU | IM_POIS | RES_SOUN | RES_TELE
+F:DROP_CORPSE | POS_GAIN_AC
+P:Copy:Barbarian:Warrior
+P:Life:120
+P:Body:Giant Reptile
+D:A large reptilian beast with wing-like membranes who glides around 
+D:wreaking destruction. It was worshipped as a god before moving to 
+D:Monster Island 
+
+#N:1270:Hedorah
+
+#N:1271:Gigan
+
+N:1272:King Caesar
+G:H:y
+I:125:150d100:20:200:40:5000
+W:76:1:999:27000:0:0
+B:BITE:HURT(5d15)
+B:CRUSH:HURT(6d12)
+B:CRUSH:HURT(6d12)
+B:CRUSH:HURT(6d12)
+F:UNIQUE | NO_SLEEP
+F:FORCE_MAXHP | REFLECTING
+F:ONLY_ITEM | DROP_2D2 | DROP_GOOD |
+F:KILL_WALL | MOVE_BODY | RANGED_MELEE
+F:KAIJU | IM_POIS | RES_TELE
+F:DROP_CORPSE | POS_GAIN_AC
+P:Copy:Barbarian:Warrior
+P:Life:120
+D:A gigantic beast with golden fur resembling a cross between a monkey, a lion 
+D:and a dog. It can reflect beams of energy back at the attacker. It has moved 
+D:to monster island very recently.
+
+#N:1273:Titanosaurus
 
 # N: serial number : monster name
 # G: symbol : color
