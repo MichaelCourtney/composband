@@ -178,6 +178,13 @@
   the 2012 Express edition as the MS seems to have "broken" Intellisense once
   again. Open poschengband.sln and compile.
 
+  To compile the source code in MinGW:
+  $ ./autogen.sh
+  $ ./configure --enable-win
+  $ make
+
+  MinGW sometimes randomly chokes on one of these steps, in which case you
+  will need to redo that step.
 
 -----  Basic for Playing  ------
 
